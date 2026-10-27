@@ -1,25 +1,23 @@
-# BILAN — November 2026 Client Review Studio
+# BILAN Monthly Client Content Portal
 
-Self-contained static client review site for **BILAN UltraThin Size 4**.
+This is the monthly client content review site for BILAN. October 2026 is the historical archive and November 2026 is the first creative review month.
 
-## Contents
-- 44 dated posts, including 10 fit/underwear posts and 4 awareness posts
-- Individual slides for all carousels
-- 6 silent Reel draft MP4s and covers
-- Captions, engagement prompts, downloadable original images, and Excel calendar
-- Gallery, format filters, search, calendar and detailed post previews
+## Publishing / review status
+- October 1–28: reported posted by campaign manager; not individually confirmed from social media.
+- October 29–31: no posting confirmation.
+- November: planned / needs review. Local browser approval does NOT publish a post or sync notes with other visitors. Clients must EXPORT a CSV to share feedback.
 
-## Running locally
-Open `START_HERE.html` or `index.html` directly to review locally. You can also run `python3 -m http.server 8080` and visit `http://localhost:8080` to test the production-style URL experience.
+## Structure
+- `index.html`: portal layout and script bootstrap.
+- `styles.css`, `app.js`: the reusable UI.
+- `oct_2026_00.js` ... `oct_2026_07.js`: October content extracted directly from original October workbook with embedded JPG previews and Drive links.
+- `data_00.js` ... `data_14.js`: existing November campaign data and original/revised image pairs in GitHub. Keep these in place.
 
-## Deploy
-Connect repository to Vercel as a **static / Other** project, root `./`, no build command. `index.html` is the default entry.
+## Next month
+1. Prepare a dated client calendar and verified product reference.
+2. Prepare one or more `month_YYYY_MM_XX.js` files adding entries into `window.BILAN_POSTS` (see schema in existing `data_00.js`).
+3. Register the new month in `months` inside `app.js`.
+4. Load the new data scripts in `index.html`, verify post counts and full slide/reel display, then deploy via GitHub/Vercel.
+5. Move only confirmed published posts to a recorded posting status. Never infer confirmation merely from a scheduled date.
 
-## Review status
-No social posts have been published or scheduled. The six Reel MP4s are silent storyboard drafts. Accuracy of AI-rendered product placement and typography must be approved against original photographs before publishing.
-
-This site is static; there is no shared review backend. A Vercel preview link is accessible to anyone with the link unless project deployment protection is enabled.
-
-
-## Lightweight download edition
-The website images are converted from PNG to high-quality WebP to improve download reliability. All 44 posts, 84 image placements, and six videos remain available; see `ASSET_FILENAME_MAPPING.csv` for original-to-website path correspondence. The included Excel workbook retains source filenames for the original full-quality asset delivery.
+The site is statically hosted; it does not yet have a multi-user database or approval backend.

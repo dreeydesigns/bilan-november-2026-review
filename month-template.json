@@ -1,0 +1,17 @@
+{
+  "id": "2026-12",
+  "name": "December 2026",
+  "status": "draft",
+  "posts": [
+    {
+      "id": "DEC26-01-A",
+      "date": "2026-12-01",
+      "format": "static",
+      "title": "Your headline",
+      "caption": "Approved draft caption",
+      "status": "review",
+      "image": "relative-path-or-data-uri",
+      "sourceUrl": ""
+    }
+  ]
+}
