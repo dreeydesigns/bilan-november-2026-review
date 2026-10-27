@@ -1,0 +1,37 @@
+BILAN NOVEMBER 2026 — GitHub & Vercel publishing guide
+
+STATUS ON 27 OCT 2026
+- Source website built and checked, 44 records, 84 images, 6 draft MP4s.
+- Initial Git commit prepared locally.
+- Vercel project CREATED: bilan-november-2026-review (Dreeydesigns team).
+- GitHub repository NOT YET CREATED on GitHub; GitHub connector provides content updates but cannot create new repos.
+- No live deployment has been made. There is no verified preview URL yet.
+
+STEP 1 — CREATE AN EMPTY REPOSITORY
+Sign in at https://github.com/new and create a PRIVATE or PUBLIC repository owned by dreeydesigns with the exact name:
+  bilan-november-2026-review
+Leave the automatic README / .gitignore / license options unchecked (the package contains its own README).
+
+STEP 2 — PUSH YOUR FILES
+Extract BILAN_November_2026_Vercel_Review_Site.zip on a PC with Git for Windows.
+Double-click PUSH_TO_GITHUB_WINDOWS.bat and follow the GitHub authentication prompt.
+The script adds all assets to Git, commits the changes, then pushes to:
+  https://github.com/dreeydesigns/bilan-november-2026-review.git
+
+Alternative if using the Git bundle:
+  git clone BILAN_November_2026_Review_Site_Git_Repository.bundle bilan-november-2026-review
+  cd bilan-november-2026-review
+  git remote add origin https://github.com/dreeydesigns/bilan-november-2026-review.git
+  git push -u origin main
+
+STEP 3 — CONNECT TO THE EXISTING VERCEL PROJECT
+In the Dreeydesigns Vercel dashboard, open project bilan-november-2026-review.
+In Project Settings > Git, connect dreeydesigns/bilan-november-2026-review.
+Use the project root '.', Framework Preset 'Other', no build command, no output directory.
+Vercel should create a deployment for the main branch. Inspect it before sharing.
+
+STEP 4 — VERIFY AND SHARE
+Check the deployment status is READY and open its exact URL from the deployment page. Test November 1, November 5-B, the November 19 awareness carousel, and Reel playback before sharing.
+
+IMPORTANT
+This is a client review gallery, not a production publishing platform. The images require final client and product-accuracy approval. Do not treat the drafts as published social content. A public Vercel URL is not access controlled unless you enable Vercel Deployment Protection.
