@@ -24,3 +24,14 @@ dialog{width:min(1160px,calc(100vw - 24px));max-height:min(92vh,1200px);padding:
 .oct-slide .filehint{font-size:10px;color:#7c858d;overflow-wrap:anywhere;margin:0}
 .oct-fallback{background:#fff4e8;padding:40px 10px;border-radius:8px;text-align:center;font-size:12px;color:#8a4a2b}
 @media(max-width:720px){.oct-slides{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.oct-slide{padding:8px}.oct-slide .source{padding:9px 3px;font-size:11px}.oct-slide img{aspect-ratio:3/4}}
+
+/* November client variation selector */
+.variationpick{background:#fff8f1;border:1px solid #e8cdb9;border-radius:14px;padding:18px;margin:14px 0 26px}
+.variationpick h3{margin:0 0 6px;font-size:19px}
+.variationpick>p{margin:5px 0 13px;color:#526677;font-size:13px}
+.variationchoices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:15px 0}
+.variationchoice{background:white;border:2px solid #e1d6cc;border-radius:11px;display:flex;align-items:center;gap:12px;padding:14px;cursor:pointer}
+.variationchoice:has(input:checked){border-color:var(--orange);background:#fff1e7;box-shadow:0 0 0 2px #f2622215}
+.variationchoice input{width:20px;height:20px;accent-color:var(--orange);margin:0;flex-shrink:0}
+.variationchoice strong{display:block;font-size:15px}.variationchoice small{display:block;color:#7b8790;font-size:12px}
+@media(max-width:480px){.variationchoices{grid-template-columns:1fr}}
